@@ -102,7 +102,12 @@
 }
 
 .fa-play {
-  font-size: 2.0em;
-  color: green;
-  margin-top: 15px;
+  font-size: 4.0em;
+  color: #28B463;
+  margin-top: 25%;
+}
+
+.fa-play:hover {
+  font-size: 5em;
+  cursor: pointer;
 }

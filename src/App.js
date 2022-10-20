@@ -4,6 +4,7 @@ import Card from './components/Card'
 import data from './data'
 
 function App() {
+
   const info = data.map(item => {
     return (
       <Card 
@@ -11,9 +12,11 @@ function App() {
         songTitle={item.songTitle}
         artist={item.artist}
         imgUrl={item.imgUrl}
+        songUrl={item.songUrl}
       />
     )
   })
+
   return (
     <div className="App">
       <Header />
