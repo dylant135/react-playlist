@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #275D97;
 }
 
 .App-logo {
@@ -44,7 +45,7 @@
 
 .header {
   width: 100%;
-  background-color: red;
+  background-color: #4F80B5;
   height: 100px;
   display: flex;
   align-items: center;
@@ -67,11 +68,41 @@
 .card {
   width: 450px;
   height: 75vh;
-  border: 2px solid black;
+  border: 2px solid red;
+  background-color: #BFD8F3;
 }
 
 .pics {
-  width: 50%;
-  height: 50%;
+  width: 62%;
+  height: 70%;
   float: left;
+}
+
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+.songTitle {
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.artist {
+  text-align: center;
+  font-size: 1.8em;
+  font-style: italic;
+  color: #727D8A;
+}
+
+.fa-play {
+  font-size: 2.0em;
+  color: green;
+  margin-top: 15px;
 }

@@ -1,15 +1,24 @@
 import './App.css';
 import Header from './components/Header'
 import Card from './components/Card'
+import data from './data'
 
 function App() {
+  const info = data.map(item => {
+    return (
+      <Card 
+        key={item.id}
+        songTitle={item.songTitle}
+        artist={item.artist}
+        imgUrl={item.imgUrl}
+      />
+    )
+  })
   return (
     <div className="App">
       <Header />
       <div className='container'>
-        <Card imgUrl='https://respect-mag.com/wp-content/uploads/2021/02/unnamed-93.jpg' />
-        <Card imgUrl='https://respect-mag.com/wp-content/uploads/2021/02/unnamed-93.jpg' />
-        <Card imgUrl='https://respect-mag.com/wp-content/uploads/2021/02/unnamed-93.jpg' />
+        {info}
       </div>
     </div>
   );
